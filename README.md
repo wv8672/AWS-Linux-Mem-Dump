@@ -15,11 +15,6 @@ A Python, Boto3 script that leverages a forensic volume to attach and mount to a
 
 ### Procedure
 
-#### Step 1: Set AWS configurations:
-These environment variables specified here are detected by the AWS CLI and AWS SDKs to utilize a particular region and IAM credentials for future API calls made. 
-
-#### Step 2: Create VPC Resource
-A dedicated virtual network that allows customized resources to be specifically allocated to it. Much like a traditional on-premises network, however, its remote and the infrastructure is highly scalable.
 
 #### Step 1: List EC2 Instances and associated Volumes
 This will show the instances running in AWS, with specific values present like tag names to uniquely identify instances. Additionally, Public and Private IP addresses, Subnet ID and AMI ID are listed. Lastly, the function also includes Block Devices or Volumes that are mapped to each instance. 
