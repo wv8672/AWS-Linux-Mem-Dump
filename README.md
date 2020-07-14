@@ -30,7 +30,7 @@ After the Forensic Volume is created, it’s status is ‘available’ and there
 
 #### Step 5: SSH into selected Instance
 Automatic SSH tunneling to an Instance allows the function access to the command line of the selected Instance. The function runs a bash script to automate a series of steps that can be summarized below. See: Figure 5 for additional details. 
-Run script that will: 
+ - Script functions: 
  - Mount Forensic Volume to selected Instance
  - Use LiME to Dump Memory of Instance on to attached Forensic Volume
  - Unmount Forensic Volume of the selected Instance
