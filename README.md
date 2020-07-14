@@ -1,5 +1,6 @@
 # Linux Memory Dump Automation in AWS
-A Python, Boto3 script that leverages a forensic volume to attach and mount to a selected instance, run a memory dump, unmount and detach from the selected instance and finally attach and mount to a Workstation 
+A Python, Boto3 script that leverages a forensic volume to attach and mount to a selected instance, run a memory dump, unmount and detach from the selected instace and then attach and mount to a workstation
+
 ---------------------------------------------------------------------------------------------------------------------
 
 ### AWS VPC Network Topology:
