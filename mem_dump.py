@@ -112,7 +112,7 @@ print(instance_id, for_vol_id)
 
 ##########################################################################################################################
 
-#SSH into selected Instance
+#SSH into selected Instance using Paramiko
 #Run remote script to:  
 # ==> Mount Forensic Volume to selected Instance 
 # ==> Use LiME to Dump Memory of Instance on to attached Forensic Volume
