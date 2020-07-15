@@ -118,11 +118,11 @@ print(instance_id, for_vol_id)
 # ==> Use LiME to Dump Memory of Instance on to attached Forensic Volume
 # ==> Unmount Forensic Volume of the selected Instance
 
-print('===> MOUNTING VOLUME TO SIFT WORKSTATION..\n')
+print('===> MOUNTING VOLUME TO SELECTED INSTANCE AND DUMPING MEMORY..\n')
 instance_conn = paramiko.SSHClient()
 instance_conn.load_system_host_keys()
 instance_conn.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-instance_conn.connect(workstation_ip, port=data.ConnPort_value, username=data.ConnUsername_value, key_filename=data.ConnKeyFilename_value)
+instance_conn.connect(ip_address, port=data.ConnPort_value, username=data.ConnUsername_value, key_filename=data.ConnKeyFilename_value)
 command = data.MemDumpScript_value
 (stdin, stdout, stderr) = instance_conn.exec_command(command)
 for std_out in stdout.readlines()
